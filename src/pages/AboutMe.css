@@ -13,7 +13,7 @@
     width: 100vw;
     background: var(--tertiary);
     position: absolute;
-    z-index: -1;
+    z-index: 999;
     overflow-y: scroll;
 }
 .aboutme-container {
@@ -70,7 +70,7 @@
 
 .aboutme-section a {
     text-decoration: underline 1px;
-    color: var(--quint);
+    color: var(--white);
 }
 
 .aboutme-section a:hover {
