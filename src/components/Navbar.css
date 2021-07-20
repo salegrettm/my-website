@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 :root {
-    --primary: #88bdbc;
-    --secondary: #254e58;
-    --tertiary: #112d32;
-    --quart: #3b3831;
-    --quint: #776f63;
+    --primary: #2b6777;
+    --secondary: #c8d8e4;
+    --tertiary: #ffffff;
+    --quart: #f2f2f2;
+    --quint: #52ab98;
     --white: #ffffff;
     font-family: 'Rubik', sans-serif;
 }
@@ -54,7 +54,7 @@
 
 .glasses {
     font-size: 5rem;
-    color: var(--quart);
+    color: var(--secondary);
     animation: bounce 1.5s ease-in-out 0s 2;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .nav-link:hover {
-    border-bottom: 6px solid var(--white);
+    border-bottom: 8px solid var(--quint);
     opacity: 0.8;
     font-weight: 600;
     transition: all 0.2s ease-out;
@@ -118,7 +118,7 @@
 
     .nav-menu.active {
         justify-content: flex-start;
-        background: #88bdbcd3;
+        background: #52ab98b0;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -134,7 +134,7 @@
     }
 
     .nav-link:hover {
-        background-color: var(--quart);
+        background-color: var(--primary);
         border-bottom: none;
         color: var(--white);
         border-radius: 0;
@@ -147,10 +147,10 @@
 
     .navbar-title {
         font-size: 1.5rem;
-        position: absolute;
+        margin-top: -40px !important;
+        margin-left: -80px !important;
+        position: fixed;
         color: var(--primary);
-        top: 0;
-        left: 0;
         transform: translate(25%, 50%);
     }
 
@@ -160,7 +160,7 @@
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 

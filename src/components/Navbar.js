@@ -13,7 +13,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to='/aboutme' className='navbar-title' onClick={closeMobileMenu}>
-                        console.log("Welcome")&nbsp;&nbsp;<IoIcons.IoMdGlasses className='glasses' />
+                        Sebastian Alegrett&nbsp;&nbsp;<IoIcons.IoMdGlasses className='glasses' />
                     </Link>
                     <div className='mobile-menu-icon' onClick={handleClick}>
                         {click ? <FaIcons.FaTimes className='quit'/> : <FaIcons.FaBars className='bars'/>}

@@ -6,15 +6,7 @@ function Footer() {
     return (
         <div className='footer'>
             <div className='footer-container'>
-                <section className='footer-prompt'>
-                    <p className='footer-prompt-text'>
-                        if(SebastianAlegrett.qualifications &gt;= expectedQualifications) &#123;<br />
-                        <a href='https://www.linkedin.com/in/sebastianalegrett/' className='hire-button'><button type='button' className='hire'>hire(SebastianAlegrett);</button></a> <br />
-                        &#125; else &#123; <br/>
-                        <span>return</span> <FaIcons.FaRegSadTear className='sad-face'/><br />
-                        &#125;
-                    </p>
-                </section>
+                        <a href='https://www.linkedin.com/in/sebastianalegrett/' className='hire-button'><button type='button' className='hire'>Hire Me!</button></a>
                 <section className='footer-credits'>
                 <span className='social'>
                 <a href='https://www.facebook.com/sebastian.alegrettmorreo/' rel="noreferrer" target='_blank'><FaIcons.FaFacebook/></a>

@@ -1,9 +1,9 @@
 :root {
-    --primary: #88bdbc;
-    --secondary: #254e58;
-    --tertiary: #112d32;
-    --quart: #3b3831;
-    --quint: #aaa08e;
+    --primary: #2b6777;
+    --secondary: #c8d8e4;
+    --tertiary: #ffffff;
+    --quart: #f2f2f2;
+    --quint: #52ab98;
     --white: #ffffff;
     font-family: 'Rubik', sans-serif;
 }
@@ -11,7 +11,7 @@
 .aboutme {
     height: 95vh;
     width: 100vw;
-    background: var(--tertiary);
+    background: var(--quart);
     position: absolute;
     z-index: 999;
     overflow-y: scroll;
@@ -69,21 +69,27 @@
 }
 
 .aboutme-section a {
-    text-decoration: underline 1px;
-    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--quint);
 }
 
 .aboutme-section a:hover {
-    font-weight: bolder;
+    text-decoration:solid underline 1px;
 }
 
 @media screen and (max-width: 960px) {
     .aboutme-title {
+        margin-left: 10vw !important;
         font-size: 4rem;
     }
 
     .aboutme-section {
         font-size: 0.8rem;
+    }
+
+    .aboutme-container {
+        margin-bottom: 2vh !important;
     }
 }
 
