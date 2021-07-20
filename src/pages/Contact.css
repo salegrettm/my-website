@@ -39,9 +39,9 @@
 .contact-container {
     display: flex;
     justify-content: center;
-    margin-top: 20vh !important;
+    margin-top: 15vh !important;
     align-items: flex-start;
-    height: 75%;
+    margin-bottom: 15vh !important;
 }
 
 .contact-icons {

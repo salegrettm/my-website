@@ -13,6 +13,7 @@
     height: 95vh;
     width: 100vw;
     position: absolute;
+    overflow-y: scroll;
 }
 
 .portfolio-container {
@@ -21,6 +22,7 @@
     margin-top: 2vh !important;
     align-items: flex-start;
     height: 100%;
+    margin-bottom: 5vh !important;
 }
 
 .portfolio-title {
@@ -47,6 +49,7 @@
     animation: slideLeft 2s ease-in 0.2s;
     list-style: none;
     display: grid;
+    height: 100%;
     grid-template-columns: repeat(2, auto);
     grid-gap: 30px;
 }
