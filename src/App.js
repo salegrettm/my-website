@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import AboutMe from "./pages/AboutMe"
@@ -9,9 +9,12 @@ import Footer from "./components/Footer";
 
 
 function App() {
+  useEffect(() => {
+    document.title = "Sebastian Alegrett"
+  }, [])
+  
   return (
     <>
-    <title>SebastianAlegrett</title>
       <Router>
         <Navbar />
         <Switch>
