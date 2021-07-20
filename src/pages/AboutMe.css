@@ -1,0 +1,89 @@
+:root {
+    --primary: #88bdbc;
+    --secondary: #254e58;
+    --tertiary: #112d32;
+    --quart: #3b3831;
+    --quint: #aaa08e;
+    --white: #ffffff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.aboutme {
+    height: 95vh;
+    width: 100vw;
+    background: var(--tertiary);
+    position: absolute;
+    z-index: -1;
+    overflow-y: scroll;
+}
+.aboutme-container {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutme-title {
+    font-size: 7rem;
+    font-weight: 100;
+    color: var(--primary);
+    margin-left: 20vw !important;
+    margin-top: 5vh !important;
+    animation: slideLeft 2s ease-in;
+}
+
+@keyframes slideLeft {
+    0%{ 
+        opacity: 0.3;
+        transform: translateX(-500px); 
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.headshot {
+    width: 30vw;
+    animation: slideRight 2s ease-in;
+    float: right;
+    margin-right: 40px !important;
+    margin-left: 40px !important;
+    top: 10vw ;
+}
+
+@keyframes slideRight {
+    0%{ 
+        opacity: 0.3;
+        transform: translateX(500px); 
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.aboutme-section {
+    margin-left: 10vw !important;
+    color: var(--primary);
+    font-size: 1.3rem;
+    animation: slideLeft 2s ease-in;
+}
+
+.aboutme-section a {
+    text-decoration: underline 1px;
+    color: var(--quint);
+}
+
+.aboutme-section a:hover {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 960px) {
+    .aboutme-title {
+        font-size: 4rem;
+    }
+
+    .aboutme-section {
+        font-size: 0.8rem;
+    }
+}
+

@@ -1,0 +1,120 @@
+:root {
+    --primary: #88bdbc;
+    --secondary: #254e58;
+    --tertiary: #112d32;
+    --quart: #3b3831;
+    --quint: #aaa08e;
+    --white: #ffffff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.portfolio {
+    background: var(--secondary);
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2vh !important;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.portfolio-title {
+    color: var(--primary);
+    font-size: 5rem;
+    margin-top: 1vh !important;
+    margin-left: 10vw !important;
+    animation: slideLeft 2s ease-in;
+}
+
+@keyframes slideLeft {
+    0%{ 
+        opacity: 0.3;
+        transform: translateX(-500px); 
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.portfolio-list {
+    margin-left: 8vw !important;
+    animation: slideLeft 2s ease-in 0.2s;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 30px;
+}
+
+
+.project-title {
+    color: var(--primary);
+    font-size: 1.9rem;
+}
+
+.project-description {
+    margin-top: 1vh !important;
+    line-height: 1.3;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.project-description a {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.project-description strong {
+    color:rgb(150, 150, 150);
+    font-size: 1.1rem;
+}
+
+.certs {
+    margin-left: 1vw !important;
+    margin-top: 1vh !important;
+    line-height: 1.3;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.certs a {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 960px) {
+    .portfolio {
+        overflow-y: scroll;
+    }
+
+    .portfolio-container {
+        margin-bottom: 50vh !important;
+    }
+
+    .portfolio-title {
+        font-size: 4rem;
+    }
+
+    .portfolio-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-title {
+        font-size: 1.4rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .certs {
+        font-size: 00.9rem;
+    }
+}
+
