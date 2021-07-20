@@ -9,7 +9,7 @@ function Footer() {
                 <section className='footer-prompt'>
                     <p className='footer-prompt-text'>
                         if(SebastianAlegrett.qualifications &gt;= expectedQualifications) &#123;<br />
-                        <a href='/contact' className='hire-button'><button type='button' className='hire'>hire(SebastianAlegrett);</button></a> <br />
+                        <a href='https://www.linkedin.com/in/sebastianalegrett/' className='hire-button'><button type='button' className='hire'>hire(SebastianAlegrett);</button></a> <br />
                         &#125; else &#123; <br/>
                         <span>return</span> <FaIcons.FaRegSadTear className='sad-face'/><br />
                         &#125;
