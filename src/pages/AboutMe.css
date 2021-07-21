@@ -79,6 +79,11 @@
 }
 
 @media screen and (max-width: 960px) {
+    .aboutme {
+        height: 120vh;
+        overflow-y: hidden;
+    }
+
     .aboutme-title {
         margin-left: 10vw !important;
         font-size: 4rem;

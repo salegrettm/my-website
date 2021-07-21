@@ -147,7 +147,7 @@
 
     .navbar-title {
         font-size: 1.5rem;
-        margin-top: -40px !important;
+        top: 10px !important;
         margin-left: -80px !important;
         position: absolute;
         color: var(--primary);

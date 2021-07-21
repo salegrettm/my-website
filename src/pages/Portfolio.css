@@ -107,6 +107,7 @@
 @media screen and (max-width: 960px) {
     .portfolio {
         overflow-y: scroll;
+        scroll-behavior: smooth;
     }
 
     .portfolio-title {
@@ -117,18 +118,24 @@
         display: flex;
         flex-direction: column;
     }
+    .portfolio-item {
+        margin-top: 5vh !important;
+    }
+
     .project-title {
         font-size: 1.4rem;
     }
 
     .project-description {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+        line-height: 1.5;
 
     }
 
     .certs {
-        font-size: 00.9rem;
-        margin-bottom: 10vh !important;
+        font-size: 1rem;
+        margin-bottom: 2vh !important;
+        line-height: 1.5;
     }
 }
 
