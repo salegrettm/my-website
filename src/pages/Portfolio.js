@@ -38,6 +38,7 @@ function Portfolio() {
                             <br /> Take a look a the cool contact logos, or if you want an easter egg, <strong>hover your mouse over the glasses.</strong>
                             <br /> Right Now I am working on finishing all of freeCodeCamp's curriculum. <br />
                             In the proces, I will be elligible to apply for another Front-End Project with a non-profit organization of my choice, so look out for that soon!
+                            <br /><br />Github for this website: <a className='project-url' href='https://github.com/salegrettm/my-website' rel="noreferrer" target='_blank'>Github</a>
                         </p>
                     </li>
                     <li className='portfolio-item'>
