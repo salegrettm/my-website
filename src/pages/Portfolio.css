@@ -14,7 +14,6 @@
     width: 100vw;
     position: absolute;
     overflow-y: scroll;
-    margin-right: 2vw !important;
 }
 
 .portfolio-container {
@@ -24,6 +23,7 @@
     align-items: flex-start;
     height: 100%;
     margin-bottom: 5vh !important;
+    margin-right: 2vw !important;
 }
 
 .portfolio-title {
