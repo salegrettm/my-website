@@ -11,8 +11,7 @@ function AboutMe() {
                     Hello! Welcome to my page. My name is Sebastian Alegrett. I am from Caracas, Venezuela, but I have lived most of my life 
                     between Mexico City and Nebraska in the U.S.A. I speak three Languages: (Spanish, English, French).<br/><br/>
                     I am currently studying <a href='https://cse.unl.edu/home' rel="noreferrer" target='_blank'>Computer Science at the University of Nebraska-Lincoln</a>.
-                    I am very interested in all things C.S, from front-end to back-end, to systems engineering. My goal is to obtain a masters in Machine Learning and Data Science,
-                    because I think these technologies will be incredibly influential in the future (and that is an understatement). <br/><br/>
+                    I am very interested in all things C.S, from front-end to back-end, to systems engineering. My goal is to obtain a masters in Machine Learning and Data Science. <br/><br/>
                     At the moment, I am focusing on learning as much as I can, completing my major, obtaining certifications from <a href='https://www.freecodecamp.org/' rel="noreferrer" target='_blank'>freeCodeCamp</a> and
                     developing as many projects as I can get my hands on. <br/><br/>
                     My specialties are: JavaScript (React.js, Angular.js, etc...), Python, C, and Java, but I love learning new tools and frameworks, so a challenge is always welcome.<br/><br/>
