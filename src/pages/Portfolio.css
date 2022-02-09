@@ -14,7 +14,7 @@
     width: 100vw;
     position: absolute;
     overflow-y: scroll;
-    margin-right: 3vw;
+    margin-right: 2vw !important;
 }
 
 .portfolio-container {
