@@ -24,8 +24,8 @@ function Portfolio() {
                             I am currently working with a team of UNL students in developing a PWA for the Nebraska Poll Observers.
                             <br /> This project has been done in conjuction with the NE Government: Election Protection Program.
                             <br /> Please bear in mind that the project is not completed yet. All development was done by a team of 6 students including myself.
-                            <br /> Throughout this project I was tasked with designing the Poll Observer form that will be used by Observers to describe the quality of Poll 
-                            <br /> standards throught the elections in the state, among other things. It is really cool to think that in every election in the state, 
+                            <br /> Throughout this project I was tasked with designing the Poll Observer form that will be used by Observers to describe the quality of Poll standards 
+                            throught the elections in the state, among other things. It is really cool to think that in every election in the state, 
                             <br /> an app that I designed will be used. The project was developed in React.js, it uses MongoDB atlas as its backend.
                             <br /> <br /> Project Link: <a className='project-url' href='https://epp-server.herokuapp.com/' rel="noreferrer" target='_blank'>NE, EPP PWA</a>
                         </p>
