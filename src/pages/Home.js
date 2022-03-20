@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import AboutMe from '../components/AboutMe';
 import Welcome from '../components/Welcome';
+import Contact from '../components/Contact';
 import './Home.css';
 
 function Home() {
@@ -26,6 +27,10 @@ function Home() {
       <h1 className="glitch sub-title" ref={aboutMe}>About Me:</h1>
       <section className='about-me-section'>
         <AboutMe />
+      </section>
+      <section className='contact-section'>
+      <h1 className="glitch sub-title" ref={contact}>Contact:</h1>
+        <Contact />
       </section>
     </div>
   )

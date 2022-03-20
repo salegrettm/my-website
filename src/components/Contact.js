@@ -6,7 +6,6 @@ import './Contact.css'
 function Contact() {
     return (
         <div className='contact'>
-            <h1 className='contact-title'>Contact me:</h1>
             <div className='contact-container'>
                 <ul className='contact-icons'>
                     <li className='contact-icon'>
