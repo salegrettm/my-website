@@ -1,11 +1,7 @@
 import {React, useEffect} from "react";
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import Navbar from "./components/Navbar";
-import AboutMe from "./pages/AboutMe"
-import Portfolio from "./pages/Portfolio"
-import Contact from "./pages/Contact"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from "./pages/Home";
 import './App.css'
-import Footer from "./components/Footer";
 
 
 function App() {
@@ -16,16 +12,9 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
         <Switch>
-          <Route exact path="/">
-            <Redirect to="/aboutme" />
-          </Route>
-          <Route path='/aboutme' exact component={AboutMe} />
-          <Route path='/portfolio' component={Portfolio} />
-          <Route path='/contact' component={Contact} />
+          <Route path="/" exact component={Home} />
         </Switch>
-        <Footer />
       </Router>
     </>
   );

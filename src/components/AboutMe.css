@@ -1,0 +1,35 @@
+#root {
+  font-family: sans-serif;
+}
+
+.about-me-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px !important;
+}
+
+.about-me-list {
+  list-style: none;
+  line-height: 1.6em;
+  padding: 10px !important;
+}
+
+.link {
+  color: white;
+}
+
+.link:focus {
+  color: #95BFDB;
+}
+
+.intro {
+  width: 50%;
+  line-height: 1.5em;
+}
