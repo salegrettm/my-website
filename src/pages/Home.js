@@ -2,9 +2,10 @@ import React, { useRef } from 'react';
 import AboutMe from '../components/AboutMe';
 import Welcome from '../components/Welcome';
 import Contact from '../components/Contact';
-import './Home.css';
 import Portfolio from '../components/Portfolio';
 import Certifications from '../components/Certifications';
+import NavBar from '../components/NavBar';
+import './Home.css';
 
 function Home() {
 
@@ -23,6 +24,7 @@ function Home() {
 
   return (
     <div className='home-wrapper' ref={top}>
+      <NavBar refs={refs} />
       <section className='welcome-section'>
         <Welcome refs={refs} />
       </section>
@@ -31,7 +33,7 @@ function Home() {
         <AboutMe />
       </section>
       <section className='contact-section'>
-      <h1 className="glitch sub-title" ref={contact}>Contact:</h1>
+        <h1 className="glitch sub-title" ref={contact}>Contact:</h1>
         <Contact />
       </section>
       <h1 className="glitch sub-title" ref={portfolio}>Portfolio:</h1>
