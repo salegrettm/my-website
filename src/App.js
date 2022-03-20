@@ -1,14 +1,10 @@
-import {React, useEffect} from "react";
+import {React } from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import './App.css'
 
 
-function App() {
-  useEffect(() => {
-    document.title = "Sebastian Alegrett"
-  }, [])
-  
+function App() {  
   return (
     <>
       <Router>
