@@ -60,9 +60,9 @@ function Portfolio() {
                 </p>
                 <div className='project-links'>
                   <label className='project-subheader'>Link:</label>
-                  <a className='project-link' href={project.link}><FaIcons.FaLink /></a>
+                  <a className='project-link' rel="noreferrer" target='_blank' href={project.link}><FaIcons.FaLink /></a>
                   <label className='project-subheader'>Github:</label>
-                  <a className='project-link' href={project.link}><FaIcons.FaGithub /></a>
+                  <a className='project-link' rel="noreferrer" target='_blank' href={project.link}><FaIcons.FaGithub /></a>
                 </div>
               </div>
             );

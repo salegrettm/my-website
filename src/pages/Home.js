@@ -4,6 +4,7 @@ import Welcome from '../components/Welcome';
 import Contact from '../components/Contact';
 import './Home.css';
 import Portfolio from '../components/Portfolio';
+import Certifications from '../components/Certifications';
 
 function Home() {
 
@@ -39,6 +40,7 @@ function Home() {
       </section>
       <h1 className="glitch sub-title" ref={certifications}>Certifications:</h1>
       <section className='certifications-section'>
+        <Certifications />
       </section>
     </div>
   )

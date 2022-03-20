@@ -1,0 +1,63 @@
+.certifications-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.completed-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2em;
+}
+
+.certifications-title {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 2vh 0;
+}
+
+.cert-title {
+  margin: 0;
+  font-weight: 500;
+}
+
+.cert-label strong {
+  text-transform: uppercase;
+}
+
+.cert-link {
+  color: white;
+}
+
+.cert-icon {
+  padding: 10px;
+  font-size: 2em;
+}
+
+.cert-upcoming-section {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.cert-info {
+  width: 70%;
+  line-height: 1.8em;
+}
+
+.cert-paragraph {
+  margin-top:  0;
+  text-align: center;
+}
