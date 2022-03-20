@@ -23,6 +23,12 @@ function AboutMe() {
           </a>
         </li>
         <li className='about-element'>
+          <strong>Major:</strong> Bachelor of Science in Computer Science
+        </li>
+        <li className='about-element'>
+          <strong>Minor:</strong> Mathematics
+        </li>
+        <li className='about-element'>
           <strong>Graduation:</strong> December 2022
         </li>
         <li className='about-element'>
