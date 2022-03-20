@@ -28,7 +28,7 @@ function Navbar(props) {
 
   const [show, setShow] = useState(false);
   const navControl = () => {
-    if (window.scrollY < (window.screen.height)) {
+    if (window.scrollY < (window.screen.height - 150)) {
       setShow(false)
     } else {
       setShow(true)
