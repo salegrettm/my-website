@@ -3,6 +3,7 @@ import AboutMe from '../components/AboutMe';
 import Welcome from '../components/Welcome';
 import Contact from '../components/Contact';
 import './Home.css';
+import Portfolio from '../components/Portfolio';
 
 function Home() {
 
@@ -31,6 +32,10 @@ function Home() {
       <section className='contact-section'>
       <h1 className="glitch sub-title" ref={contact}>Contact:</h1>
         <Contact />
+      </section>
+      <h1 className="glitch sub-title" ref={portfolio}>Portfolio:</h1>
+      <section className='portfolio-section'>
+        <Portfolio />
       </section>
     </div>
   )
