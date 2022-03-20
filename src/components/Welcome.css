@@ -95,8 +95,8 @@
 
 .init-nav-btn {
   border: none;
-  margin: 2vh 0 !important;
-  padding: 1em 1.5em !important;
+  margin: 2vh 0;
+  padding: 1em 1.5em;
   box-shadow: 0.3em 0 0 rgba(255, 0, 0, 0.75),
     -0.2em -0.175em 0 rgba(0, 255, 0, 0.75),
     0.3em 0.2em 0 rgba(0, 0, 255, 0.75);
@@ -115,6 +115,44 @@
   transform: scale(1.05);
   cursor: pointer;
   filter:brightness(0.8);
+}
+
+@media screen and (max-width: 1107px) {
+  .title {
+    font-size: 5em;
+  }
+
+  .sub-title {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .title {
+    font-size: 4em;
+  }
+
+  .sub-title {
+    font-size: 2.8em;
+  }
+
+  .welcome-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .initial-navigation {
+    flex-direction: row;
+    width: 99%;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .init-nav-btn {
+    margin: 0 3px;
+    padding: 0.3em 0.5em;
+  }
 }
 
 

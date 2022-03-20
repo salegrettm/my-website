@@ -33,3 +33,13 @@
   width: 50%;
   line-height: 1.5em;
 }
+
+@media screen and (max-width: 780px) {
+  .about-me-wrapper {
+    flex-direction: column;
+  }
+
+  .intro {
+    width: 100%;
+  }
+}

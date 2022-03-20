@@ -88,3 +88,22 @@
   transform: scale(1.1);
   filter: brightness(0.8);
 }
+
+@media screen and (max-width: 780px) {
+  .projects-wrapper {
+    flex-direction: column;
+  }
+
+  .project-image {
+    height: 15vh;
+  }
+
+  .project {
+    margin-top: 10px;
+  }
+
+  .upcoming-section {
+    margin-top: 30px;
+    width: 100%;
+  }
+}

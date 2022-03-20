@@ -61,3 +61,33 @@
   margin-top:  0;
   text-align: center;
 }
+
+@media screen and (max-width: 780px) {
+  .completed-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .cert-title {
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  .cert-label {
+    font-size: 0.9em;
+  }
+  .certification {
+    margin-top: 10px;
+    line-height: 1.5em;
+  }
+
+  .cert-info {
+    width: 100%;
+  }
+
+  .cert-icon {
+    display: none;
+  }
+}
