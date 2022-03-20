@@ -28,19 +28,23 @@ function Home() {
       <section className='welcome-section'>
         <Welcome refs={refs} />
       </section>
-      <h1 className="glitch sub-title" ref={aboutMe}>About Me:</h1>
+      <div className='ref' ref={aboutMe} />
+      <h1 className="glitch sub-title">About Me:</h1>
       <section className='about-me-section'>
         <AboutMe />
       </section>
       <section className='contact-section'>
-        <h1 className="glitch sub-title" ref={contact}>Contact:</h1>
+        <div className='ref' ref={contact} />
+        <h1 className="glitch sub-title">Contact:</h1>
         <Contact />
       </section>
-      <h1 className="glitch sub-title" ref={portfolio}>Portfolio:</h1>
+      <div className='ref' ref={portfolio} />
+      <h1 className="glitch sub-title" >Portfolio:</h1>
       <section className='portfolio-section'>
         <Portfolio />
       </section>
-      <h1 className="glitch sub-title" ref={certifications}>Certifications:</h1>
+      <div className='ref' ref={certifications} />
+      <h1 className="glitch sub-title">Certifications:</h1>
       <section className='certifications-section'>
         <Certifications />
       </section>
