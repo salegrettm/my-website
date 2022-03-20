@@ -37,6 +37,9 @@ function Home() {
       <section className='portfolio-section'>
         <Portfolio />
       </section>
+      <h1 className="glitch sub-title" ref={certifications}>Certifications:</h1>
+      <section className='certifications-section'>
+      </section>
     </div>
   )
 }

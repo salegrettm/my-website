@@ -9,21 +9,21 @@ function Portfolio() {
       title: 'Clientix PWA',
       technologies: 'React.js, Clientix PHP API, Netlify',
       company: 'ALeNet, Inc.',
-      description: 'This Progressive Web App is downloadable on all devices. Clientix is ALeNet\'s CRM for financial services.' +
-        ' The app showcases in the form of a demo banking site the functionality of the Clientix data API. It was developed throughout my time ' +
-        'as an intern at ALeNet, Inc. You can see a forked version of the project on my GitHub below.' +
-        ' The app was developed by myself, with the help of Clientix back-end engineers to develop and hook up the API',
+      description: 'Clientix is ALeNet\'s CRM for financial services.' +
+        ' The app showcases, in the form of a demo banking site, the functionality of the Clientix data API. It was developed throughout my time ' +
+        'as an intern at ALeNet, Inc.' +
+        ' The app was developed by myself, with the help of Clientix back-end engineers to develop and hook up the API.',
       link: 'https://clientix-portal-demo.netlify.app/',
       github: 'https://github.com/salegrettm/demo-portal',
       images: ['images/clientix-app.png', 'images/clientix-app-mobile.png']
     },
     {
       title: 'Civic Nebraska PWA',
-      technologies: 'React.js, Node.js, MongoDB, Express, Auth0, Formik',
+      technologies: 'React.js, Node.js, MongoDB, Auth0, Formik',
       company: 'Election Protection Program (Civic Nebraska)',
-      description: 'This Progressive Web App is downloadable on all devices. The Civic Nebraska Election Protection App ' +
+      description: 'The Civic Nebraska Election Protection App ' +
         ' serves as a way of helping poll observers manage poll locations. It was developed throughout the 21-22 UNL Capstone ' +
-        'Project. You can see a forked version of the project on my GitHub below.' +
+        'Project.' +
         ' The app was developed by a team of 6 students including myself, with the help of UNL staff as project management.',
       link: 'https://epp-server.herokuapp.com/',
       github: 'https://github.com/salegrettm/election-protection-program',
@@ -39,9 +39,6 @@ function Portfolio() {
             return (
               <div className='project' key={project.title}>
                 <h2 className='project-title'>{project.title}</h2>
-                <h3 className='project-subtitle'>
-                  <strong>Company: </strong>{project.company}
-                </h3>
                 <div className='project-images'>
                   {
                     project.images.map((img, idx) => {
@@ -49,9 +46,15 @@ function Portfolio() {
                     })
                   }
                 </div>
-                <label className='project-subheader'>Technologies:</label>
-                <label className='project-tech'>{project.technologies}</label>
-                <label className='project-subheader'>Description:</label>
+                <label className='project-subheader'>
+                  <strong>Company: </strong>{project.company}
+                </label>
+                <label className='project-subheader'>
+                  <strong>Technologies: </strong>{project.technologies}
+                </label>
+                <label className='project-subheader'>
+                  <strong>Description:</strong>
+                </label>
                 <p className='project-description'>
                   {project.description}
                 </p>
@@ -67,7 +70,7 @@ function Portfolio() {
         }
       </div>
       <div className='upcoming-section'>
-        <h2 className='project-title'>Others and Upcoming: </h2>
+        <h2 className='project-title'>Info and Upcoming</h2>
         <p className='paragraph'>
           This website was entirely developed in React.js. In here I showcase my front-end knowledge and design.
           Currently, I am working on finishing my degree and freeCodeCamp certifications.

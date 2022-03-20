@@ -14,7 +14,7 @@
 }
 
 .upcoming-section {
-  margin-top: 25px;
+  margin-top: 15vh;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -44,12 +44,7 @@
   padding: 0;
 }
 
-.project-subtitle {
-  font-size: 1.1em;
-  font-weight: 300;
-}
-
-.project-subtitle strong {
+.project-subheader strong {
   text-transform: uppercase;
 }
 
@@ -59,18 +54,19 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .project-subheader {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 5px 0;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
 .project-description {
   line-height: 1.3em;
   width: 95%;
+  margin-top: 0;
 }
 
 .project-tech {
