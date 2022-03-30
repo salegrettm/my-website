@@ -1,36 +1,47 @@
 .about-me-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
 
+.top-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5vh;
+}
+
+.headshot {
+  width: 30%;
+  margin-bottom: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 3px;
+}
+
 .about-title {
   font-size: 1.8rem;
-  margin-bottom: 10px !important;
-  padding-bottom: 10px;
-  border-bottom: 2px solid;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
   width: fit-content;
+  margin-top: 0;
 }
 
 .about-me-list {
   list-style: none;
   line-height: 1.6em;
-  padding: 10px !important;
+  padding-inline: 0 !important;
 }
 
 .about-element {
   font-weight: 100;
 }
 
-.about-element strong {
-  color: aliceblue;
-}
-
 
 .link {
-  color: #2B4461;
+  color: #272829;
 }
 
 .link:focus {
@@ -38,12 +49,36 @@
 }
 
 .intro {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
   line-height: 1.5em;
+  text-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 780px) {
   .about-me-wrapper {
+    flex-direction: column;
+  }
+  
+  .headshot {
+    width: 50%;
+  }
+
+  .top-sec {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .about-title {
+    margin: 0;
+  }
+
+  .about-me-list {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
     flex-direction: column;
   }
 

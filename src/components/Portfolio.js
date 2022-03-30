@@ -46,10 +46,10 @@ function Portfolio() {
                 }
               </div>
               <label className='project-subheader'>
-                <strong>Company: </strong><br/>{project.company}
+                <strong>Company: </strong><br />{project.company}
               </label>
               <label className='project-subheader'>
-                <strong>Technologies: </strong><br/>{project.technologies}
+                <strong>Technologies: </strong><br />{project.technologies}
               </label>
               <label className='project-subheader'>
                 <strong>Description:</strong>
@@ -67,18 +67,20 @@ function Portfolio() {
           );
         })
       }
-      <h2 className='project-title'>Info and Upcoming</h2>
-      <p className='paragraph'>
-        This website was entirely developed in React.js. In here I showcase my front-end knowledge and design.
-        Currently, I am working on finishing my degree and freeCodeCamp certifications.
-        In a few months this will make me eligible to develop a charity project for a non-profit organization of my
-        choice. Be on the look out for that!
-      </p>
-      <p className='paragraph'>
-        Additionally, below you will find my completed freeCodeCamp certifications.
-        I have linked to my freeCodeCamp profile, were you can see the curriculum and projects
-        I have completed to earn them. Feel free to check them out on my CodePen linked below.
-      </p>
+      <div className='project'>
+        <h2 className='project-title'>Info and Upcoming</h2>
+        <p className='paragraph'>
+          This website was entirely developed in React.js. In here I showcase my front-end knowledge and design.
+          Currently, I am working on finishing my degree and freeCodeCamp certifications.
+          In a few months this will make me eligible to develop a charity project for a non-profit organization of my
+          choice. Be on the look out for that!
+        </p>
+        <p className='paragraph'>
+          Additionally, below you will find my completed freeCodeCamp certifications.
+          I have linked to my freeCodeCamp profile, were you can see the curriculum and projects
+          I have completed to earn them. Feel free to check them out on my CodePen linked below.
+        </p>
+      </div>
     </div>
   )
 }

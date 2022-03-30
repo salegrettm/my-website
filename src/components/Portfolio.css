@@ -21,17 +21,16 @@
   flex-direction: column;
   align-items: center;
   margin-bottom:5vh;
-  border: 1px solid #273E58;
   padding: 10px;
   border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: #91A6C1;
 }
 
 .project-title {
   font-size: 1.8em;
-  text-transform: uppercase;
   margin: 0 !important;
-  padding-bottom: 10px;
-  border-bottom: 2px solid;
+  padding-bottom:5px;
   width: fit-content;
 }
 

@@ -23,8 +23,8 @@
 }
 
 .about-me-section {
-  width: 70%;
-  height: 70vh;
+  width: 80%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,20 +43,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 20vh 0;
 }
 
 .portfolio-section {
-  width: 70%;
+  width: 80%;
   height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #91A6C1;
   color: #273E58;
-  padding: 30px;
   margin: 0 0 20vh 0;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 2px;
 }
 
@@ -80,6 +76,10 @@
     padding: 20px;
     padding-top: 0;
     margin-bottom: 0;
+  }
+
+  .portfolio-section {
+    width: 100%;
   }
 
   .contact-section {

@@ -10,6 +10,15 @@
 .sub-title {
   font-size: 4em;
   color: aliceblue;
+  font-weight: 100 !important;
+}
+
+h1 {
+  margin-block-end: 0.4em;
+}
+
+h3 {
+  font-weight: normal;
 }
 
 .welcome-wrapper {
@@ -31,7 +40,6 @@
   margin: 2vh 0;
   padding: 1em 1.5em;
   border-radius: 2px;
-  font-weight: bold;
   text-transform: uppercase;
   color: #273E58;
   background-color: aliceblue;
@@ -75,14 +83,16 @@
 
   .initial-navigation {
     flex-direction: row;
-    width: 99%;
+    width: fit-content;
     justify-content: space-evenly;
-    margin: 0;
+    margin: 5px;
   }
 
   .init-nav-btn {
     margin: 0 3px;
-    padding: 0.3em 0.5em;
+    padding: 1em 0.35em;
+    font-size: 0.8em;
+    white-space: nowrap;
   }
 }
 
