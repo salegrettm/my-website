@@ -1,58 +1,50 @@
 .project-image {
   height: 25vh;
-  margin: 2px;
-  border: 1px solid whitesmoke;
+  margin: 5px;
+  border: 1px solid aliceblue;
+  border-radius: 3px;
 }
 
 .portfolio-wrapper {
   height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.upcoming-section {
-  margin-top: 14vh;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
   width: 70%;
-  line-height: 1.6em;
-}
-
-.projects-wrapper {
-  height: 100%;
-  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .project {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom:5vh;
+  border: 1px solid #273E58;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .project-title {
   font-size: 1.8em;
   text-transform: uppercase;
   margin: 0 !important;
-  padding: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  width: fit-content;
 }
 
 .project-subheader strong {
   text-transform: uppercase;
+  color: aliceblue;
 }
 
 .project-images {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -79,7 +71,7 @@
 
 .project-link {
   margin: 0 1vw;
-  color: whitesmoke;
+  color: #273E58;
   font-size: 1.5em;
 }
 

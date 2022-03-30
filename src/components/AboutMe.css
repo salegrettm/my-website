@@ -9,6 +9,9 @@
 .about-title {
   font-size: 1.8rem;
   margin-bottom: 10px !important;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  width: fit-content;
 }
 
 .about-me-list {
@@ -17,12 +20,21 @@
   padding: 10px !important;
 }
 
-.link {
+.about-element {
+  font-weight: 100;
+}
+
+.about-element strong {
   color: aliceblue;
 }
 
+
+.link {
+  color: #2B4461;
+}
+
 .link:focus {
-  color: #95BFDB;
+  color: rgb(38, 0, 128);
 }
 
 .intro {
