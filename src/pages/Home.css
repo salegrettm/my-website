@@ -46,14 +46,14 @@
 }
 
 .portfolio-section {
-  width: 80%;
+  width: 100%;
   height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #273E58;
-  margin: 0 0 20vh 0;
   border-radius: 2px;
+  margin: 0;
 }
 
 .certifications-section {
@@ -76,10 +76,6 @@
     padding: 20px;
     padding-top: 0;
     margin-bottom: 0;
-  }
-
-  .portfolio-section {
-    width: 100%;
   }
 
   .contact-section {

@@ -17,6 +17,7 @@
 
 .project {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,11 +28,18 @@
   background-color: #91A6C1;
 }
 
-.project-title {
+.project-title a {
   font-size: 1.8em;
   margin: 0 !important;
-  padding-bottom:5px;
   width: fit-content;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-title a:hover {
+  cursor: pointer;
+  font-size: 1.85em;
+  filter: brightness(1.2);
 }
 
 .project-subheader strong {
@@ -71,7 +79,17 @@
 .project-link {
   margin: 0 1vw;
   color: #273E58;
-  font-size: 1.5em;
+}
+
+.git-link {
+  font-size: 3em;
+  color: #273E58;
+}
+
+.git-link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(0.8);
 }
 
 .project-link:hover {
@@ -81,8 +99,12 @@
 }
 
 @media screen and (max-width: 780px) {
-  .projects-wrapper {
-    flex-direction: column;
+
+  .project-title a {
+    font-size: 1.3em;
+  }
+  .portfolio-wrapper {
+    width: 85%;
   }
 
   .project-image {
@@ -91,10 +113,5 @@
 
   .project {
     margin-top: 10px;
-  }
-
-  .upcoming-section {
-    margin-top: 30px;
-    width: 100%;
   }
 }

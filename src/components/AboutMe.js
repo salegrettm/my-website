@@ -21,7 +21,7 @@ function AboutMe() {
               className='link'
               target='_blank'
               href='https://computing.unl.edu/'>
-              University of Nebraska-Lincoln School of Computing
+              UNL School of Computing
             </a>
           </li>
           <li className='about-element'>

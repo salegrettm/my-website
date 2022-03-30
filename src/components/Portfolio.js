@@ -6,18 +6,6 @@ function Portfolio() {
 
   const projects = [
     {
-      title: 'Clientix PWA',
-      technologies: 'React.js, Clientix PHP API, Netlify',
-      company: 'ALeNet, Inc.',
-      description: 'Clientix is ALeNet\'s CRM for financial services.' +
-        ' The app showcases, in the form of a demo banking site, the functionality of the Clientix data API. It was developed throughout my time ' +
-        'as an intern at ALeNet, Inc.' +
-        ' The app was developed by myself, with the help of Clientix back-end engineers to develop and hook up the API.',
-      link: 'https://clientix-portal-demo.netlify.app/',
-      github: 'https://github.com/salegrettm/demo-portal',
-      images: ['images/clientix-app.png', 'images/clientix-app-mobile.png']
-    },
-    {
       title: 'Civic Nebraska PWA',
       technologies: 'React.js, Node.js, MongoDB, Auth0, Formik',
       company: 'Election Protection Program (Civic Nebraska)',
@@ -28,6 +16,18 @@ function Portfolio() {
       link: 'https://epp-server.herokuapp.com/',
       github: 'https://github.com/salegrettm/election-protection-program',
       images: ['images/civ-neb.png', 'images/civ-neb-mobile.png']
+    },
+    {
+      title: 'Clientix PWA',
+      technologies: 'React.js, Clientix PHP API, Netlify',
+      company: 'ALeNet, Inc.',
+      description: 'Clientix is ALeNet\'s CRM for financial services.' +
+        ' The app showcases, in the form of a demo banking site, the functionality of the Clientix data API. It was developed throughout my time ' +
+        'as an intern at ALeNet, Inc.' +
+        ' The app was developed by myself, with the help of Clientix back-end engineers to develop and hook up the API.',
+      link: 'https://clientix-portal-demo.netlify.app/',
+      github: 'https://github.com/salegrettm/demo-portal',
+      images: ['images/clientix-app.png', 'images/clientix-app-mobile.png']
     }
   ]
 
@@ -37,7 +37,11 @@ function Portfolio() {
         projects.map((project) => {
           return (
             <div className='project' key={project.title}>
-              <h2 className='project-title'>{project.title}</h2>
+              <h2 className='project-title'>
+                <a rel="noreferrer" target='_blank' href={project.link}>
+                  {project.title}<FaIcons.FaLink className='project-link' />
+                </a>
+              </h2>
               <div className='project-images'>
                 {
                   project.images.map((img, idx) => {
@@ -57,12 +61,7 @@ function Portfolio() {
               <p className='project-description'>
                 {project.description}
               </p>
-              <div className='project-links'>
-                <label className='project-subheader'>Link:</label>
-                <a className='project-link' rel="noreferrer" target='_blank' href={project.link}><FaIcons.FaLink /></a>
-                <label className='project-subheader'>Github:</label>
-                <a className='project-link' rel="noreferrer" target='_blank' href={project.link}><FaIcons.FaGithub /></a>
-              </div>
+              <a className='git-link' rel="noreferrer" target='_blank' href={project.link}><FaIcons.FaGithub /></a>
             </div>
           );
         })
