@@ -29,9 +29,7 @@ function Welcome(props) {
   return (
     <div className='welcome-wrapper'>
       <h1 className="glitch title">
-        <span aria-hidden="true">Sebastian Alegrett</span>
-        Sebastian Alegrett
-        <span aria-hidden="true">Sebastian Alegrett</span>
+        Sebastian <br/> Alegrett
       </h1>
       <div className='initial-navigation'>
         {

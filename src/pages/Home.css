@@ -4,7 +4,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  background-color: #222;
+  background-color: #395b82;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
 .about-me-section {
@@ -29,8 +28,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #111111;
-  color: white;
+  background-color: #91A6C1;
+  color: #273E58;
   padding: 30px;
   margin: 0 0 20vh 0;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -53,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #111111;
+  background-color: #91A6C1;
   color: white;
   padding: 30px;
   margin: 0 0 20vh 0;
@@ -67,8 +66,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #111111;
-  color: white;
+  background-color: #91A6C1;
+  color: #273E58;
   padding: 30px;
   margin: 0 0 20vh 0;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
