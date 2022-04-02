@@ -101,6 +101,13 @@
 @media screen and (max-width: 780px) {
   .form {
     margin-top: 0;
+    width: 75%;
+  }
+
+  .input-space {
+    align-items: center;
+    justify-content: center;
+    margin: 0.5vh 0;
   }
 
   .form-row {
