@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .form {
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-bottom: 10vh;
   width: 60%;
   height: fit-content;
@@ -99,6 +99,10 @@
 }
 
 @media screen and (max-width: 780px) {
+  .form {
+    margin-top: 0;
+  }
+
   .form-row {
     flex-direction: column;
   }
@@ -113,5 +117,10 @@
 
   .company {
     border-left: none !important;
+  }
+
+  .text-area {
+    width: 90%;
+    margin: 2vh 0 5vh 0;
   }
 }

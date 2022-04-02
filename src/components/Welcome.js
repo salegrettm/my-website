@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Welcome.css';
 
 function Welcome(props) {
@@ -6,38 +7,44 @@ function Welcome(props) {
   const buttons = [
     {
       name: 'About Me',
-      ref: props.refs.aboutMe
+      ref: props.ids.aboutMe
     },
     {
       name: 'Portfolio',
-      ref: props.refs.portfolio
+      ref: props.ids.portfolio
     },
     {
       name: 'Certifications',
-      ref: props.refs.certifications
+      ref: props.ids.certifications
     },
     {
       name: 'Contact',
-      ref: props.refs.contact
+      ref: props.ids.contact
     },
   ]
-
-  const handleClick = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
 
   return (
     <div className='welcome-wrapper'>
       <h1 className="glitch title">
-        Sebastian <br/> Alegrett
+        Sebastian <br /> Alegrett
       </h1>
       <div className='initial-navigation'>
         {
           buttons.map((btn, idx) => {
             return (
-              <button key={idx} className='init-nav-btn' onClick={() => handleClick(btn.ref)}>
-                {btn.name}
-              </button>
+              <Link
+                key={idx}
+                activeClass='active'
+                to={btn.ref}
+                spy={true}
+                smooth={true}
+                offset={20}
+                duration={1000 * (idx + 1)}
+              >
+                <button key={idx} className='init-nav-btn'>
+                  {btn.name}
+                </button>
+              </Link>
             );
           })
         }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 import './NavBar.css'
 
 function Navbar(props) {
@@ -6,25 +7,21 @@ function Navbar(props) {
   const buttons = [
     {
       name: 'About Me',
-      ref: props.refs.aboutMe
+      ref: props.ids.aboutMe
     },
     {
       name: 'Portfolio',
-      ref: props.refs.portfolio
+      ref: props.ids.portfolio
     },
     {
       name: 'Certifications',
-      ref: props.refs.certifications
+      ref: props.ids.certifications
     },
     {
       name: 'Contact',
-      ref: props.refs.contact
+      ref: props.ids.contact
     },
   ]
-
-  const handleClick = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
 
   const [show, setShow] = useState(false);
   const navControl = () => {
@@ -44,9 +41,19 @@ function Navbar(props) {
       {
         buttons.map((btn, idx) => {
           return (
-            <button key={idx} className='nav-btn' onClick={() => handleClick(btn.ref)}>
-              {btn.name}
-            </button>
+            <Link
+              key={idx}
+              activeClass='active'
+              to={btn.ref}
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={300 * (idx + 1)}
+            >
+              <button key={idx} className='nav-btn'>
+                {btn.name}
+              </button>
+            </Link>
           );
         })
       }
