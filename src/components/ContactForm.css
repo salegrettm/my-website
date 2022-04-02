@@ -97,3 +97,21 @@
     transform: scale(0);
   }
 }
+
+@media screen and (max-width: 780px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .input-space input {
+    border-radius: 13px;
+  }
+
+  .email{
+    border-right: none !important;
+  }
+
+  .company {
+    border-left: none !important;
+  }
+}

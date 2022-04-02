@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
 import * as FaIcons from 'react-icons/fa';
 import './Certifications.css'
 
 function Certifications() {
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   const certs = [
     {
@@ -31,7 +36,7 @@ function Certifications() {
 
   return (
     <div className='certifications-wrapper'>
-      <h1 className='certifications-title'>Completed</h1>
+      <h1 className='certifications-title' data-aos='fade-up'>Completed</h1>
       {
         certs.map((cert) => {
           return (
@@ -41,6 +46,7 @@ function Certifications() {
               target='_blank'
               href={cert.link}
               key={cert.name}
+              data-aos='fade-up'
             >
               <h2 className='cert-title'>{cert.name}</h2>
               {cert.icon}
@@ -56,8 +62,8 @@ function Certifications() {
           );
         })
       }
-      <h1 className='certifications-title'>Upcoming</h1>
-      <div className='cert-upcoming-section'>
+      <h1 className='certifications-title' data-aos='fade-up'>Upcoming</h1>
+      <div className='cert-upcoming-section' data-aos='fade-up'>
         <label className='cert-label'>
           Front End Developer (1200 hrs) - April 2022
         </label>
@@ -74,8 +80,8 @@ function Certifications() {
           Bachelor of Science in Computer Science - December 2022
         </label>
       </div>
-      <h1 className='certifications-title'>Info</h1>
-      <div className='cert-info'>
+      <h1 className='certifications-title' data-aos='fade-up'>Info</h1>
+      <div className='cert-info' data-aos='fade-up'>
         <p className='cert-paragraph'>
           All of these certifications are completed through freeCodeCamp with the exception of my degree.
           Click <a className='cert-link' rel="noreferrer" target='_blank' href='https://www.freecodecamp.org/salegrettm'>here</a>

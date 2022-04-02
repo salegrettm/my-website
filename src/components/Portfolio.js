@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import Aos from 'aos';
 import * as FaIcons from 'react-icons/fa';
 import './Portfolio.css'
 
 function Portfolio() {
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   const projects = [
     {
@@ -36,7 +41,7 @@ function Portfolio() {
       {
         projects.map((project) => {
           return (
-            <div className='project' key={project.title}>
+            <div className='project' data-aos='fade-up' key={project.title}>
               <h2 className='project-title'>
                 <a rel="noreferrer" target='_blank' href={project.link}>
                   {project.title}<FaIcons.FaLink className='project-link' />
@@ -66,7 +71,7 @@ function Portfolio() {
           );
         })
       }
-      <div className='project'>
+      <div className='project' data-aos='fade-up'>
         <h2 className='project-title'>Info and Upcoming</h2>
         <p className='paragraph'>
           This website was entirely developed in React.js. In here I showcase my front-end knowledge and design.

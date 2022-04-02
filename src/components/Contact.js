@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import './Contact.css'
 
 function Contact() {
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, []);
     return (
-        <div className='contact'>
+        <div className='contact' data-aos='fade-up'>
             <div className='contact-container'>
                 <ul className='contact-icons'>
                     <li className='contact-icon'>
@@ -14,7 +18,7 @@ function Contact() {
                             <span className='side'></span>
                             <span className='side'></span>
                             <span className='side'></span>
-                            <span className='side'><FaIcons.FaFacebook className='facebook-icon'/></span>
+                            <span className='side'><FaIcons.FaFacebook className='facebook-icon' /></span>
                         </a>
                     </li>
                     <li className='contact-icon'>
@@ -23,7 +27,7 @@ function Contact() {
                             <span className='side'></span>
                             <span className='side'></span>
                             <span className='side'></span>
-                            <span className='side'><FaIcons.FaLinkedin className='linkedin-icon'/></span>
+                            <span className='side'><FaIcons.FaLinkedin className='linkedin-icon' /></span>
                         </a>
                     </li>
                     <li className='contact-icon'>
@@ -32,7 +36,7 @@ function Contact() {
                             <span className='side'></span>
                             <span className='side'></span>
                             <span className='side'></span>
-                            <span className='side'><FaIcons.FaInstagram className='instagram-icon'/></span>
+                            <span className='side'><FaIcons.FaInstagram className='instagram-icon' /></span>
                         </a>
                     </li>
                     <li className='contact-icon'>
@@ -41,7 +45,7 @@ function Contact() {
                             <span className='side'></span>
                             <span className='side'></span>
                             <span className='side'></span>
-                            <span className='side'><AiIcons.AiOutlineMail className='email-icon'/></span>
+                            <span className='side'><AiIcons.AiOutlineMail className='email-icon' /></span>
                         </a>
                     </li>
                     <li className='contact-icon'>
@@ -50,7 +54,7 @@ function Contact() {
                             <span className='side'></span>
                             <span className='side'></span>
                             <span className='side'></span>
-                            <span className='side'><FaIcons.FaWhatsapp className='whats-icon'/></span>
+                            <span className='side'><FaIcons.FaWhatsapp className='whats-icon' /></span>
                         </a>
                     </li>
                 </ul>

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Aos from 'aos';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import * as FaIcons from 'react-icons/fa';
@@ -7,6 +8,10 @@ import emailjs from 'emailjs-com'
 import './ContactForm.css';
 
 function ContactForm() {
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   const [submitting, setSubmitting] = useState(false);
 
@@ -60,7 +65,7 @@ function ContactForm() {
   })
 
   return (
-    <form onSubmit={formik.handleSubmit} className='form'>
+    <form onSubmit={formik.handleSubmit} className='form' data-aos='fade-up'>
       {
         submitting ?
           <>
