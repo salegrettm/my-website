@@ -33,11 +33,6 @@ function Home() {
       <section className='about-me-section'>
         <AboutMe />
       </section>
-      <section className='contact-section'>
-        <div className='ref' ref={contact} />
-        <h1 className="glitch sub-title">Contact:</h1>
-        <Contact />
-      </section>
       <div className='ref' ref={portfolio} />
       <h1 className="glitch sub-title" >Portfolio:</h1>
       <section className='portfolio-section'>
@@ -47,6 +42,11 @@ function Home() {
       <h1 className="glitch sub-title">Certifications:</h1>
       <section className='certifications-section'>
         <Certifications />
+      </section>
+      <section className='contact-section'>
+        <div className='ref' ref={contact} />
+        <h1 className="glitch sub-title">Contact:</h1>
+        <Contact />
       </section>
     </div>
   )

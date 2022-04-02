@@ -28,12 +28,13 @@
 
 .certifications-title {
   font-size: 2em;
-  margin: 2vh 0;
+  margin: 0;
 }
 
 .cert-title {
   margin: 0;
   font-weight: 500;
+  margin-top: 1vh;
 }
 
 .cert-label strong {
@@ -54,14 +55,15 @@
   line-height: 1.8em;
   text-align: center;
   padding: 20px;
-  margin-top: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
 }
 
 .cert-info {
   width: 70%;
   padding: 20px;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
   line-height: 1.8em;
   border-radius: 3px;
   background-color: #233850;

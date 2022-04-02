@@ -26,6 +26,8 @@
   text-transform: uppercase;
   background-color: transparent;
   color: whitesmoke;
+  transition: 350ms ease;
+  border-bottom: 6px solid transparent;
 }
 
 .nav-btn a {
@@ -35,20 +37,6 @@
 .nav-btn:hover {
   cursor: pointer;
   filter:brightness(0.8);
+  border-bottom: 6px solid aliceblue;
 }
 
-.nav-btn:hover:first-child {
-  border-bottom: 6px solid rgba(255, 0, 0, 0.8);
-}
-
-.nav-btn:hover:last-child {
-  border-bottom: 6px solid rgba(0, 0, 255, 0.8);
-}
-
-.nav-btn:hover:nth-child(2) {
-  border-bottom: 6px solid rgba(0, 128, 0, 0.8);
-}
-
-.nav-btn:hover:nth-child(3) {
-  border-bottom: 6px solid rgba(255, 255, 0, 0.8);
-}

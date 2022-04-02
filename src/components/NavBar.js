@@ -9,17 +9,17 @@ function Navbar(props) {
       ref: props.refs.aboutMe
     },
     {
-      name: 'Contact',
-      ref: props.refs.contact
-    },
-    {
       name: 'Portfolio',
       ref: props.refs.portfolio
     },
     {
       name: 'Certifications',
       ref: props.refs.certifications
-    }
+    },
+    {
+      name: 'Contact',
+      ref: props.refs.contact
+    },
   ]
 
   const handleClick = (ref) => {
