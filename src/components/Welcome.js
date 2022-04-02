@@ -38,7 +38,7 @@ function Welcome(props) {
                 to={btn.ref}
                 spy={true}
                 smooth={true}
-                offset={20}
+                offset={0}
                 duration={1000 * (idx + 1)}
               >
                 <button key={idx} className='init-nav-btn'>
