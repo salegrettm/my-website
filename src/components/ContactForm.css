@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.form {
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #91A6C1;
+  color: #273E58;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 2px;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.input-space {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.input-space input {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: aliceblue;
+  margin-top: 2px;
+}
+
+.email {
+  border-top-left-radius:13px;
+  border-bottom-left-radius: 13px;
+  border-right: 2px solid #273E58 !important;
+}
+
+.company {
+  border-top-right-radius:13px;
+  border-bottom-right-radius: 13px;
+  border-left: 2px solid #273E58 !important;
+}
+
+.error {
+  border: 2px solid rgba(168, 2, 2, 0.788) !important;
+}
+
+.text-area {
+  width: 50%;
+  height: 150px;
+  margin: 1vh 0;
+  border: none;
+  border-radius: 13px;
+  padding: 10px;
+  resize: none;
+  background-color: aliceblue;
+}
+
+.form-title {
+  font-size: 2em;
+  margin: 0;
+  color: aliceblue;
+}
+
+.text-area::placeholder {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.submit-icon {
+  font-size: 7em;
+  animation: grow 2s infinite;
+  transition: 1s ease;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

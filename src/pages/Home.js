@@ -6,6 +6,7 @@ import Portfolio from '../components/Portfolio';
 import Certifications from '../components/Certifications';
 import NavBar from '../components/NavBar';
 import './Home.css';
+import ContactForm from '../components/ContactForm';
 
 function Home() {
 
@@ -47,6 +48,7 @@ function Home() {
         <div className='ref' ref={contact} />
         <h1 className="glitch sub-title">Contact:</h1>
         <Contact />
+        <ContactForm />
       </section>
     </div>
   )
