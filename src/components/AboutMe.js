@@ -12,7 +12,7 @@ function AboutMe() {
             <strong>Position:</strong> Software Developer
           </li>
           <li className='about-element'>
-            <strong>Experience:</strong> 2+ years
+            <strong>Experience:</strong> 3+ years
           </li>
           <li className='about-element'>
             <strong>Studies: </strong>
@@ -41,11 +41,8 @@ function AboutMe() {
       <div className='intro'>
         <h3 className='about-title'>Introduction</h3>
         <p>
-          Professional software developer, currently a senior computer science student
-          at the University of Nebraska-Lincoln. I am dedicated to my craft, I love programming
-          everything from client to server side. Whether it is styling with CSS,
-          coding responsive components for your front-end, hooking up an API to your app,
-          or checking the quality of your back-end code, you can count on me.
+          Professional software developer in React.js/React Native, Node, Golang. 
+          University of Nebraska-Lincoln Computer Science Graduate (B.S in Computer Science).
         </p>
       </div>
     </div>
