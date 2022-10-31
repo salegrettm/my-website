@@ -31,7 +31,7 @@ function AboutMe() {
             <strong>Minor:</strong> Mathematics
           </li>
           <li className='about-element'>
-            <strong>Graduation:</strong> December 2022
+            <strong>Graduation:</strong> August 2022
           </li>
           <li className='about-element'>
             <strong>Computer Science GPA:</strong> 3.75
@@ -41,8 +41,9 @@ function AboutMe() {
       <div className='intro'>
         <h3 className='about-title'>Introduction</h3>
         <p>
-          Professional software developer in React.js/React Native, Node, Golang. 
-          University of Nebraska-Lincoln Computer Science Graduate (B.S in Computer Science).
+          Professional software developer in React.js/React Native, Node, Golang.
+          Experienced with the react lifecycle, standard modern react libraries (you shouldn't be using Redux),
+          hooks, full-stack development with Node and Golang. Currently a React / Goalng developer at Humanex Ventures.
         </p>
       </div>
     </div>
